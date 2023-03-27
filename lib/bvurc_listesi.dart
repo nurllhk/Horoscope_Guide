@@ -1,3 +1,4 @@
+import 'package:burc/burc_item.dart';
 import 'package:burc/data/strings.dart';
 import 'package:flutter/material.dart';
 import 'models/burc_model.dart';
@@ -14,15 +15,13 @@ class Burclistesi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Burclar'),
+        title: Center(child: Text('ZODYA')),
       ),
       body: Center(
         child: ListView.builder(
           itemBuilder: (contex, index) {
 
-            return Container(
-
-            );
+            return BurcItem(ListelenenBurc: tumBurclar[index]);
 
 
           },
